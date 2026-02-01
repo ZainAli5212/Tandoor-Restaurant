@@ -1,0 +1,22 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto
+
+# Ensure JavaScript/TypeScript files always use LF
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# Ensure config and JSON files use LF
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+
+# Binary files should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
