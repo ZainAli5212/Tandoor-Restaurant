@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Common/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import OrderNow from './pages/OrderNow/OrderNow'
@@ -25,8 +25,8 @@ function App() {
         <Route path="/franchising" element={<Franchising />} />
         <Route path="/gallery" element={<Gallery />} />
 
-      </Routes>
 
+      </Routes>
     </>
   )
 }

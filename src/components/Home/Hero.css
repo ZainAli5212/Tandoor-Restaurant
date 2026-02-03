@@ -1,0 +1,42 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.59)), url("D:\React\new tandori resturant\src\assets\hero.jpg");
+  background-size:cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+    justify-content: center;
+    color: white;
+    padding: 0px 5%;
+}
+
+
+.hero h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0px;
+    /* word-spacing: 5px; */
+}
+.hero h3{
+    font-weight: 100;
+}
+.hero p{
+    font-size: 18px;
+}
+.welcome{
+    color: #cb8e32;
+}
+.btn-Section{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid white; */
+    gap: 30px;
+}
+
+.btn-Section {
+    margin-top: 20px;
+}

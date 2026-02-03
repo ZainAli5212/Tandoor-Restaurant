@@ -1,0 +1,15 @@
+.transparentBtn{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 18px;
+    /* margin-top: 25px; */
+    color: white;
+    cursor: pointer;
+}
+
+.transparentBtn:hover{
+    background-color: white;
+    color: black;
+}

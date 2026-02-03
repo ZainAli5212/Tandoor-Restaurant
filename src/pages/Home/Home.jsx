@@ -1,7 +1,10 @@
+import Hero from "../../components/Home/Hero"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Hero/>
+    </div>
   )
 }
 
