@@ -10,6 +10,7 @@ import TandooriCatering from './pages/TandooriCatering/TandooriCatering'
 import Locations from './pages/Locations/Locations'
 import Franchising from "./pages/Franchising/Franchising"
 import Gallery from './pages/Gallery/Gallery'
+import Footer from './components/Common/Footer'
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
 
 
       </Routes>
+
+      <Footer/>
     </>
   )
 }

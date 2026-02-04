@@ -1,5 +1,5 @@
 import "./MenuSection.css"
-import ColorButton from "../Common/ColorButton"
+import ViewMenuBtn from "../Common/ViewMenuBtn"
 
 
 
@@ -26,7 +26,7 @@ const MenuSection = () => {
                 <CategoryBox categoryTitle= "Popular Items" cards={popularItems}/>
                 
                 <div className="view-menubtn">
-                <ColorButton id = "view-menuBtn" btnText={"View Full Menu"}/>
+                <ViewMenuBtn id = "view-menuBtn" btnText={"View Full Menu"}/>
 
                 </div>
             </div>

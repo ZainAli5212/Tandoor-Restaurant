@@ -1,15 +1,24 @@
-.transparentBtn{
+.OrderBtn{
     padding: 10px 30px;
     border-radius: 30px;
     border: 1px solid white;
     background-color: transparent;
-    font-size: 18px;
-    /* margin-top: 25px; */
-    color: white;
+
+
     cursor: pointer;
 }
 
-.transparentBtn:hover{
+.OrderBtn a{
+    text-decoration: none;
+        color: white;
+            font-size: 18px;
+}
+
+.OrderBtn:hover{
     background-color: white;
+    
+}
+
+.OrderBtn:hover a{
     color: black;
 }

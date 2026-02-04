@@ -1,9 +1,8 @@
-import Button from "../Common/Button"
-import ColorButton from "../Common/ColorButton"
+import OrderBtn from "../Common/OrderBtn"
+import ViewMenuBtn from "../Common/ViewMenuBtn"
 
 
 import "./Hero.css"
-// import myPic from "../../assets/hero.jpg";
 
 const Hero = () => {
     return (
@@ -12,8 +11,8 @@ const Hero = () => {
             <h1>Authentic Flavors</h1>
             <h3>Experience the taste of tradition</h3>
             <div className="btn-Section">
-            <ColorButton btnText={"View Menu"}/>
-            <Button btnText={"Order Now"}/>
+            <ViewMenuBtn btnText={"View Menu"}/>
+            <OrderBtn btnText={"Order Now"}/>
             </div>
         </div>
     )

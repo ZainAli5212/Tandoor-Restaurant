@@ -114,7 +114,7 @@ export const Reservations = () => {
                       className="form-input"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Zain Ali"
                       required
                     />
                   </div>
@@ -126,7 +126,7 @@ export const Reservations = () => {
                       className="form-input"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="zain@example.com"
                       required
                     />
                   </div>

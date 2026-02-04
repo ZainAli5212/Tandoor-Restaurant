@@ -4,12 +4,19 @@
     background-color: #cb8e32;
     border: none;
     cursor: pointer;
-    font-size: 17px;
+
     transition: all .2s ease-in-out;
 
     
 }
 
+.viewBtn-link{
+    text-decoration: none;
+        font-size: 17px;
+        color: rgb(0, 0, 0);
+}
+
 .colorBtn:hover{
     scale: 0.97;
 }
+

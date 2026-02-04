@@ -14,12 +14,13 @@
     text-transform: uppercase;
 }
 .menu-header h1{
-    font-size: 40px;
+    font-size: 3rem;
     margin: 15px;
 }
 
 .menu-header p{
-    font-size: 18px;
+    /* font-size: 18px; */
+    color: #64748b;
     width: 50%;
     text-align: center;
 }

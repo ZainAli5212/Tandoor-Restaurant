@@ -16,9 +16,9 @@ const Navbar = () => {
   }, []);
 
   const scrollToReservations = () => {
-    setIsMobileMenuOpen(false);
+    // setIsMobileMenuOpen(false);
     document.getElementById('reservations')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  }; 
     return (
         <div className={`navbar ${isScrolled ? "nav-scrolled" : "nav-transparent"}`}>
             {/* <div className="filler"></div> */}
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <li><NavLink to="/Menu" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Menu</NavLink></li>
                         <li><NavLink to="/locations" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Locations</NavLink></li>
                         <li><NavLink to="/gallery" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Gallery</NavLink></li>
-                        <li> <button>Reserve Table</button> </li>
+                        <li> <button onClick={() => scrollToReservations()} >Reserve Table</button> </li>
                         
                         {/* look at them later */}
 
