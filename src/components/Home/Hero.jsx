@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <div className='hero'>
             <p className="welcome">Welcome to Tandoori Restaurant</p>
-            <h1>Rich Curries</h1>
+            <h1>Authentic Flavors</h1>
             <h3>Experience the taste of tradition</h3>
             <div className="btn-Section">
             <ColorButton btnText={"View Menu"}/>

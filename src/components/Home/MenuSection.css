@@ -1,0 +1,31 @@
+.home-menu-section{
+    padding: 3% 5%;
+    background-color: rgba(0, 0, 0, 0.107);
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-header span{
+    color: #cb8e32;
+    text-transform: uppercase;
+}
+.menu-header h1{
+    font-size: 40px;
+    margin: 15px;
+}
+
+.menu-header p{
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+}
+
+.view-menubtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

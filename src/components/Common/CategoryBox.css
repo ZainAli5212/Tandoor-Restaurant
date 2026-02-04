@@ -1,17 +1,96 @@
+.slider-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-
-h2{
+.slider-container h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 30px 0px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+.category-title {
+  margin-bottom: 20px;
+  color: #000000; /* Assuming a dark theme like Netflix */
+  font-size: 1.5rem;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    /* padding: 0 12% 100px; */
+.slider-window {
+  width: 100%;
+  overflow: hidden; /* Hides the rest of the row */
+  border-radius: 8px;
 }
+
+.slider-track {
+  display: flex;
+  /* Use a smooth transition for that high-end feel */
+  transition: transform 0.8s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.slider-item-wrapper {
+  /* Width is now handled by inline style in JSX for flexibility */
+  padding: 0 10px; /* This creates the gap between cards */
+  box-sizing: border-box;
+}
+
+.slider-wrapper {
+    position: relative; /* Allows arrows to be positioned absolute */
+    display: flex;
+    align-items: center;
+}
+
+/* Arrow Styling */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: background 0.3s; */
+}
+
+.nav-arrow:hover { background: rgb(144, 139, 139); }
+.nav-arrow.left { left: -20px; }
+.nav-arrow.right { right: -20px; }
+
+/* Dots Container */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Matching your image: the active dot becomes a dash */
+.dot.active {
+    width: 30px;
+    background: #d4a373;
+    border-radius: 6px;
+}
+
+/* Optional: Hide arrows on small screens if you want pure swipe */
+@media (max-width: 640px) {
+    .nav-arrow { display: none; }
+}
+
 
 

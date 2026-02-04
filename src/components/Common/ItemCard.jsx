@@ -1,11 +1,11 @@
 import "./ItemCard.css"
-const DishCard = ({ItemName, source}) => {
+const DishCard = ({name, image}) => {
     return (
         <div>
             <div className="grid-item">
-                <img src={source} alt="Dish 3" />
+                <img src={image} alt="Dish 3" />
                 <div className="overlay-text">
-                    <h2>{ItemName}</h2>
+                    <h2>{name}</h2>
                 </div>
             </div>
         </div>
