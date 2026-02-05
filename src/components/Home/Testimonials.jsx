@@ -122,7 +122,6 @@ const Testimonials = () => {
                 ))}
             </div>
         
-        {/* Navigation omitted for brevity, but you apply .nav-container and .dot classes here */}
       </div>
 
       {/* Stats */}

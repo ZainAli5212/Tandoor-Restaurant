@@ -1,0 +1,107 @@
+/* Container constraints */
+.about-cards-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+/* Values Grid Layout */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* Value Card Styling */
+.value-card {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d4a373; /* Sophisticated gold/bronze accent */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.card-description {
+  line-height: 1.6;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* CTA Banner Styling */
+.cta-banner {
+  background-color: #1a1a1a; /* Dark sleek background */
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+    color:  #cb8e32;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+  
+  .about-cards-section  {
+    padding: 40px 15px;
+  }
+}

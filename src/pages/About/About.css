@@ -1,0 +1,9 @@
+
+
+.stats-container{
+    /* display: flex; */
+    padding-bottom: 4rem;
+    margin: auto;
+    max-width: 1400px;
+    /* background-color: #f2f2f2; */
+}

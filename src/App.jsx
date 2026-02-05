@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Common/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
+import Menu from './pages/Menu/Menu'
 import OrderNow from './pages/OrderNow/OrderNow'
 import TandooriCatering from './pages/TandooriCatering/TandooriCatering'
 import Locations from './pages/Locations/Locations'
@@ -20,11 +21,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/order-now" element={<OrderNow />} />
         <Route path="/tandoori-catering" element={<TandooriCatering />} />
         <Route path="/locations" element={<Locations />} />
         <Route path="/franchising" element={<Franchising />} />
         <Route path="/gallery" element={<Gallery />} />
+
 
 
       </Routes>

@@ -1,21 +1,20 @@
 .OrderBtn{
     padding: 10px 30px;
-    border-radius: 30px;
-    border: 1px solid white;
-    background-color: transparent;
-
-
+    border-radius: 15px;
+    border: none;
+    background-color: #D1A054;
+    width: 100%;
     cursor: pointer;
 }
 
 .OrderBtn a{
     text-decoration: none;
         color: white;
-            font-size: 18px;
+            font-size: 17px;
 }
 
 .OrderBtn:hover{
-    background-color: white;
+    background-color:#bf8d42;
     
 }
 

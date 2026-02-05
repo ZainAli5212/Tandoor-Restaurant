@@ -1,0 +1,94 @@
+.menu-display-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Category Filter Bar */
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  overflow-x: auto; /* Enables swipe on mobile */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-btn {
+  padding: 10px 24px;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  color: #555;
+  border-radius: 50px;
+  font-weight: 500;
+  white-space: nowrap; /* Prevents text wrapping */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover {
+  border-color: #c19a6b;
+  color: #c19a6b;
+}
+
+.category-btn.active {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Text */
+.results-text {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.results-text strong {
+  color: #1a1a1a;
+}
+
+/* The Menu Grid */
+.menu-grid {
+  display: grid;
+  /* Automatically fits as many cards as possible, minimum 300px wide */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Empty State */
+.no-items {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  border: 2px dashed #e0e0e0;
+}
+
+.no-items p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .category-container {
+    justify-content: flex-start; /* Aligns to left for scrolling */
+    padding-left: 5px;
+  }
+  
+  .menu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}

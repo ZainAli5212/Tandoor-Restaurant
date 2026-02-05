@@ -83,7 +83,7 @@
 /* Matching your image: the active dot becomes a dash */
 .dot.active {
     width: 30px;
-    background: #d4a373;
+    background: #D1A054;
     border-radius: 6px;
 }
 
