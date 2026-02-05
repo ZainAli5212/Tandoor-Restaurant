@@ -5,7 +5,7 @@ const MenuHero = () => {
     return (
         <div>
             <section className="menu-hero" style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./public/menu.jpg)`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./menu.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",

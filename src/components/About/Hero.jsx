@@ -9,7 +9,7 @@ const AboutHero = () => {
 
 
      <div className='menu-section' style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url(./public/hero-2.jpg)`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)) , url(./hero-2.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
@@ -40,7 +40,7 @@ const AboutHero = () => {
 
             <div className="image-card">
               <img
-                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+                src="./gallery.jpg"
                 alt="Tandoori Restaurant Interior"
                 className="main-img"/>
             </div>

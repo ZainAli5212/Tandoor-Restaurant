@@ -4,7 +4,7 @@ const Hero = () => {
   return (
 
       <section className="location-hero" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./public/location.jpg)`,
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./location.jpg)`,
       backgroundSize: "cover",
       backgroundPosition: "top",
       height: "100vh",
