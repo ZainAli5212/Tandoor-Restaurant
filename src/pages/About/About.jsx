@@ -2,7 +2,7 @@ import React from 'react';
 import { Clock, Target, Eye, MapPin } from 'lucide-react';
 import './About.css';
 import AboutHero from "../../components/About/Hero"
-import Stats from '../../components/About/stats';
+import Stats from '../../components/About/Stats';
 import AboutCards from '../../components/About/AboutCards';
 
 
