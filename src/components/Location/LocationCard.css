@@ -1,0 +1,111 @@
+.location-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px; /* Ensures all cards in a grid stay equal height */
+  width: 300px;
+}
+
+.location-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Section */
+.location-image-wrapper {
+  width: 100%;
+  height: 220px; /* Fixed height for consistency */
+  overflow: hidden;
+}
+
+.location-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.location-card:hover .location-image-wrapper img {
+  transform: scale(1.1);
+}
+
+/* Details Section */
+.location-details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Pushes action buttons to the bottom */
+}
+
+.branch-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.branch-address {
+  font-style: normal;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-height: 3em; /* Ensures address lines don't break the layout */
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 25px;
+}
+
+.phone-link {
+  color: #c19a6b; /* Accent Bronze */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.phone-link:hover {
+  color: #1a1a1a;
+}
+
+/* Action Button */
+.location-actions {
+  margin-top: auto;
+}
+
+.direction-button {
+  display: block;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.direction-button:hover {
+  background-color: #c19a6b;
+  color: #ffffff;
+}
+
+/* Mobile Tweak */
+@media (max-width: 480px) {
+  .location-image-wrapper {
+    height: 180px;
+  }
+  
+  .branch-name {
+    font-size: 1.4rem;
+  }
+}

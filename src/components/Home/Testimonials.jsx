@@ -1,13 +1,13 @@
 import "./Testimonials.css"
 import { useState } from "react";
-import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
     id: 1,
     name: "Ahmed Khan",
     role: "Food Blogger",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+     image: "./user.jpg",
     rating: 5,
     text: "Highly Recommended Caters both for food and service point of view in Islamabad. Never disappointed their Management.",
   },
@@ -15,7 +15,7 @@ const testimonials = [
     id: 2,
     name: "Fatima Malik",
     role: "Regular Customer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
+     image: "./user.jpg",
     rating: 4,
     text: "The food was absolutely wonderful, from preparation to presentation, very pleasing. We especially enjoyed the Chicken Karahi.",
   },
@@ -23,7 +23,7 @@ const testimonials = [
     id: 3,
     name: "Hassan Ali",
     role: "Corporate Client",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+     image: "./user.jpg",
     rating: 5,
     text: "Perfect venue for our business dinners. The private dining area is elegant, and the Mutton Karahi never disappoints. Five-star service every time.",
   },
@@ -31,7 +31,7 @@ const testimonials = [
     id: 4,
     name: "Ayesha Tariq",
     role: "Wedding Planner",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+    image: "./user.jpg",
     rating: 5,
     text: "I recommend Tandoori to all my clients for their wedding functions. The catering is impeccable, and the biryani is legendary!",
   },
@@ -39,7 +39,7 @@ const testimonials = [
     id: 5,
     name: "Omar Siddiqui",
     role: "Food Critic",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
+    image: "./user.jpg",
     rating: 5,
     text: "A rare gem that maintains quality across all branches. The Chinese fusion is surprisingly good, and the traditional BBQ is simply unmatched.",
   },
@@ -103,9 +103,10 @@ const Testimonials = () => {
               <p className="testimonial-text">"{testimonial.text}"</p>
               <div className="author-container">
                 <img src={testimonial.image} alt={testimonial.name} className="author-image" />
+                {/* <User style={{width: 20, height: 20, borderRadius: 50 }}/> */}
                 <div>
                   <h4 className="author-name">{testimonial.name}</h4>
-                  <p className="author-role">{testimonial.role}</p>
+                  {/* <p className="author-role">{testimonial.role}</p> */}
                 </div>
               </div>
             </div>

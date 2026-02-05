@@ -1,0 +1,116 @@
+/* Note: The main container styles are handled by your inline styles, 
+   but we add flex properties here to center the content. */
+.location-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.location-hero-content {
+  max-width: 850px;
+  z-index: 2;
+}
+
+/* Badge Styling */
+.badge {
+  display: inline-block;
+  background-color: #c19a6b; /* Heritage Bronze/Gold */
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* Typography */
+.location-hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.location-hero-content p {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  opacity: 0.95;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* City Quick Links */
+.city-quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.city-quick-links span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-right: 5px;
+}
+
+.city-quick-links button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px); /* Modern Glassmorphism effect */
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.city-quick-links button:hover {
+  background: #ffffff;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  border-color: #ffffff;
+}
+
+/* Animation for a polished entry */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .location-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .city-quick-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .city-quick-links button {
+    width: 80%; /* Easier to tap on mobile */
+  }
+  
+  .city-quick-links span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

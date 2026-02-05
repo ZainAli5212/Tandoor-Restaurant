@@ -1,0 +1,75 @@
+/* Main Page Container */
+.locations-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fafafa; /* Subtle contrast from card white */
+}
+
+/* Individual City Section */
+.city-group-box {
+  margin-bottom: 80px; /* Large spacing between cities */
+}
+
+.city-group-box:last-child {
+  margin-bottom: 0;
+}
+
+/* City Header Styling */
+.city-header {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.city-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  position: relative;
+  text-transform: capitalize;
+}
+
+/* Accent line under the city name */
+.city-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #c19a6b; /* Heritage Bronze */
+}
+
+/* The Grid for LocationCards */
+.city-grid {
+  display: grid;
+  /* Responsive columns: 1 on mobile, 2 on tablets, 3 on desktops */
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+/* Tablet Adjustments */
+@media (max-width: 1024px) {
+  .city-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .locations-container {
+    padding: 40px 15px;
+  }
+
+  .city-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .city-grid {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+    gap: 20px;
+  }
+}
