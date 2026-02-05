@@ -11,7 +11,7 @@ const Hero = () => {
   }; 
     return (
         <div className='hero'style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./public/home.jpg)`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.296)) , url(./home.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "top",
         height: "100vh",
