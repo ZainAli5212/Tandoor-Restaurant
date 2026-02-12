@@ -37,10 +37,10 @@
   letter-spacing: 1px;
 }
 
-.section-title {
+.res-section-title {
   font-size: 42px;
   margin: 10px 0 20px;
-  color: var(--foreground);
+  color: white;
 }
 
 .section-description {
@@ -74,7 +74,7 @@
 
 .feature-icon { color: var(--accent); width: 24px; height: 24px; }
 
-.feature-title { margin: 0; color: var(--foreground); }
+.feature-title { margin: 0; color: white; }
 
 .feature-text { font-size: 14px; color: var(--muted); margin-top: 4px; }
 

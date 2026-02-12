@@ -57,7 +57,7 @@ export const Reservations = () => {
           {/* Left Side - Info */}
           <div className="info-column">
             <span className="section-subtitle">Reservations</span>
-            <h2 className="section-title">Book Your Table</h2>
+            <h2 className="res-section-title">Book Your Table</h2>
             <p className="section-description">
               Reserve your spot for an unforgettable dining experience. Whether
               it's a romantic dinner, family gathering, or business meeting,

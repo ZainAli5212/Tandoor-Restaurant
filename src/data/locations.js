@@ -1,6 +1,6 @@
 export const categories = [
   { id : "islamabad"},
-  { id : "Rawalpindi"},
+  { id : "rawalpindi"},
   { id : "faisalabad"},
   {id : "abbottabad"},
   {id : "multan"},
@@ -15,7 +15,7 @@ export const locations = [
     address: "20-A, Jasmine Plaza, G-8 Markaz, Islamabad",
     phone: "(051) 2252533", 
     category: "Islamabad",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const locations = [
     address: "Khursheed Market, St#30, F-10/1, Islamabad",
     phone: "(051) 2105566",
     category: "Islamabad",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const locations = [
     address: "Plot# 45, 46 Block B, Faisal Town, Islamabad",
     phone: "0341-3007722",
     category: "Islamabad",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const locations = [
     address: "Bazar Stop Main Murree Road, Adjacent to CSD Bhara Kahu, Islamabad",
     phone: "0341-8007722",
     category: "Islamabad",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const locations = [
     address: "384, Block B Police Foundation, Rawalpindi",
     phone: "(051) 5170365",
     category: "Rawalpindi",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const locations = [
     address: "Sector E, DHA Phase 1, Rawalpindi",
     phone: "(051) 5788896",
     category: "Rawalpindi",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const locations = [
     address: "Plot No. C-IA, Block A, Phase 2 New City, Wah Cantt",
     phone: "(051) 7068133",
     category: "Rawalpindi",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const locations = [
     address: "Kohinoor City, Faisalabad",
     phone: "0348-4441888",
     category: "Faisalabad",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const locations = [
     address: "Vehari Road, Burewala",
     phone: "0345-0077226",
     category: "Burewala",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 10,
@@ -96,7 +96,7 @@ export const locations = [
     address: "Link Jalalpur Pirwala - Lodhran Rd, Multan",
     phone: "0346-0007722",
     category: "Multan",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   },
   {
     id: 11,
@@ -106,6 +106,6 @@ export const locations = [
     phone: "0341-6007722",
     category: "Abbottabad",
 
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
+    image: "./gallery.jpg"
   }
 ];

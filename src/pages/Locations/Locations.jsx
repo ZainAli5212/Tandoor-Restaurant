@@ -1,13 +1,12 @@
 import React from 'react'
 import Hero from '../../components/Location/Hero'
-import LocationSection from '../../components/Location/LocationSection'
+import LocationDisplay from '../../components/Location/BranchDisplay'
 
 const Locations = () => {
   return (
     <div>
       <Hero/>
-      {/* <LocationSection/> */}
-     
+      <LocationDisplay/>
     </div>
   )
 }

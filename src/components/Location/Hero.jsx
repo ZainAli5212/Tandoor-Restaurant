@@ -1,6 +1,14 @@
 import React from 'react'
+
+import { categories } from '../../data/locations'
 import "./Hero.css"
 const Hero = () => {
+    const scrollToCity = (city) => {
+      const element = document.getElementById(city);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth"});
+      }
+    }
   return (
 
       <section className="location-hero" style={{
@@ -17,9 +25,12 @@ const Hero = () => {
 
           <div className="city-quick-links">
             <span>Jump to:</span>
-            <button onClick={() => scrollToCity('Islamabad')}>Islamabad</button>
-            <button onClick={() => scrollToCity('Rawalpindi')}>Rawalpindi</button>
-            <button onClick={() => scrollToCity('Faisalabad')}>Faisalabad</button>
+            {
+              categories.map((cat) => (
+                <button key={cat.id} onClick={() => scrollToCity(cat.id.toLowerCase())}>{cat.id}</button>
+              ))
+            }
+
           </div>
         </div>
       </section>

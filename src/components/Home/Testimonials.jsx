@@ -79,7 +79,7 @@ const Testimonials = () => {
       {/* Header */}
       <div className="header-container">
         <span className="section-label">Testimonials</span>
-        <h2 className="section-title">What Our Guests Say</h2>
+        <h2 className="test-section-title">What Our Guests Say</h2>
         <p className="section-description">
           Don't just take our word for it. Here's what our valued customers
           have to say about their dining experience at Tandoori.
