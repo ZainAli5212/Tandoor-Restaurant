@@ -1,50 +1,73 @@
-import "./Navbar.css"
-
+import "./Navbar.css";
 import { useState, useEffect } from "react";
-
-
 import { NavLink } from "react-router-dom";
+// Optional: import { FaBars, FaTimes } from "react-icons/fa"; // If using react-icons
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); // State for mobile menu
+
     useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-  
+    const toggleMenu = () => setIsOpen(!isOpen);
+
     return (
+
         <div className={`navbar ${isScrolled ? "nav-scrolled" : "nav-transparent"}`}>
-            {/* <div className="filler"></div> */}
-            <nav>
-                <div className="logo">
-                    <img width="200" height="120" src="https://tandoorirestaurants.pk/wp-content/uploads/2024/02/cropped-TR.png" alt="Tandoori Restaurants" decoding="async" />            </div>
+            <div className="navbar-container">
 
-                <div className="links">
-                    <ul>
 
-                        <li><NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Home</NavLink></li>
-                        <li><NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>About</NavLink></li>
-                        <li><NavLink to="/Menu" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Menu</NavLink></li>
-                        <li><NavLink to="/locations" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Locations</NavLink></li>
-                        <li><NavLink to="/gallery" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Gallery</NavLink></li>
-                        {/* <li> <button onClick={() => scrollToReservations()} >Order Now</button> </li> */}
-                        <li> <button > <a href="https://tandoori.blinkco.io/">Order Now</a></button> </li>
-                        
-                        {/* look at them later */}
+                <nav>
+                    <div className="logo">
+                        <img
+                            width="200"
+                            height="120"
+                            src="https://tandoorirestaurants.pk/wp-content/uploads/2024/02/cropped-TR.png"
+                            alt="Tandoori Restaurants"
+                        />
+                    </div>
 
-                        {/* <li><NavLink to="/franchising" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Franchising</NavLink></li> */}
-                        {/* <li><NavLink to="/tandoori-catering" className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Tandoori Catering</NavLink></li> */}
-                        {/* <li><NavLink to="/order-now" className={({ isActive }) => (isActive ? "active-link" : "nav-link")} >Order Now</NavLink></li> */}
+                    {/* Hamburger Icon */}
+                    <div className="hamburger" onClick={toggleMenu}>
+                        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+                        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+                        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+                    </div>
 
-                    </ul>
-                </div>
-            </nav>
+                    <div className={`links ${isOpen ? "nav-active" : ""}`}>
+                        <ul>
+                            <li>
+                                <NavLink to="/" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/Menu" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Menu</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/locations" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Locations</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/gallery" onClick={() => setIsOpen(false)} className={({ isActive }) => (isActive ? "active-link" : "nav-link")}>Gallery</NavLink>
+                            </li>
+                            <li>
+                                <button className="order-btn">
+                                    <a href="https://tandoori.blinkco.io/">Order Now</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

@@ -12,6 +12,11 @@
     padding: 0px 5%;
 
 }
+.navbar-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
 
 .nav-transparent {
     background-color: transparent;
@@ -97,4 +102,68 @@ nav img {
 
 .links button:hover {
     scale: 0.98;
+}
+
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Media Query */
+@media (max-width: 968px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav img {
+        height: 70px;
+        width: 120px;
+    }
+
+    .links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden off-screen */
+        height: 100vh;
+        width: 70%; /* Takes up 70% of screen width */
+        background-color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s right ease-in-out;
+        box-shadow: -5px 0px 15px rgba(0,0,0,0.5);
+    }
+
+    /* When menu is toggled open */
+    .links.nav-active {
+        right: 0;
+    }
+
+    .links ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Animate Hamburger into an 'X' */
+    .bar.open:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+    .bar.open:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
