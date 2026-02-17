@@ -1,7 +1,12 @@
 import React from 'react';
 import './AboutCards.css';
+import { useNavigate } from "react-router-dom";
+
 
 const AboutCards = ({ values }) => {
+
+  const navigate = useNavigate();
+
     
   return (
     <section className="about-cards-section">
@@ -30,7 +35,7 @@ const AboutCards = ({ values }) => {
               From traditional Chinese and Continental to our signature Traditional Desi cuisine,
               we bring the best of Pakistan to your table.
             </p>
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => navigate("/locations")}>
               Find a Location
             </button>
           </div>

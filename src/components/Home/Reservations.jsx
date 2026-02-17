@@ -18,10 +18,6 @@ const timeSlots = [
 
 const partySizes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "10+"];
 
-const branches = [
-  { id: "main", name: "Downtown Main Street" },
-  { id: "west", name: "Westside Waterfront" }
-];
 
 export const Reservations = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -83,7 +79,7 @@ export const Reservations = () => {
               <p className="event-card-text">
                 For parties of 15 or more, please call us directly.
               </p>
-              <a href="tel:+924235781234" className="contact-link">
+              <a href="tel:0512105566" className="contact-link">
                 <Phone size={18} /> (051) 2105566
               </a>
             </div>

@@ -1,0 +1,68 @@
+.gallery-hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery-hero-content {
+  max-width: 700px;
+}
+
+.gallery-hero-headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color:hsl(37, 62%, 50%);
+  margin: 0 0 1.25rem;
+  line-height: 1.15;
+}
+
+.gallery-hero-subheadline {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-hero-btn {
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+  letter-spacing: 0.025em;
+}
+
+.gallery-hero-btn-primary {
+  background-color: hsl(37, 62%, 50%);
+  color: #000000;
+  border: none;
+}
+.gallery-hero-btn-primary:hover{
+  transform: scale(0.95);
+}
+
+.gallery-hero-btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.gallery-hero-btn-outline:hover{
+  background-color: white;
+  color: #000000;
+}

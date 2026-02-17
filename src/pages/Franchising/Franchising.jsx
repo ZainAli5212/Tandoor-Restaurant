@@ -1,10 +1,12 @@
 import React from 'react'
-import Hero from '../../components/Franchising/Hero'
+import FranchisingHero from '../../components/Franchising/FranchisingHero'
+
+
 
 const Franchising = () => {
   return (
     <div>
-      <Hero/>
+      <FranchisingHero/>
     </div>
   )
 }
