@@ -131,7 +131,7 @@
   text-decoration: none;
   background-color: var(--color-primary);
   padding: 8px 16px;
-  color: black;
+  color: var(--color-text-primary);
   border-radius: 5px;
 }
 
