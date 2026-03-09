@@ -2,7 +2,7 @@
     padding: 10px 30px;
     border-radius: 15px;
     border: none;
-    background-color: #D1A054;
+    background-color: var(--color-primary);
     width: 100%;
     cursor: pointer;
 }
@@ -14,7 +14,7 @@
 }
 
 .OrderBtn:hover{
-    background-color:#bf8d42;
+    background-color: var(--color-primary-dark);
     
 }
 
