@@ -77,7 +77,7 @@
 
 .feature-title { margin: 0; color: white; }
 
-.feature-text { font-size: 14px; color: var(--muted); margin-top: 4px; }
+.feature-text { font-size: 14px; color: var(--color-text-muted); margin-top: 4px; }
 
 .event-card {
   background: white;
