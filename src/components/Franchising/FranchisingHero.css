@@ -1,3 +1,12 @@
+/* Scoped variables for this component only */
+:root {
+  --fr-accent: #cb8e32;
+  --fr-foreground: #0f172a;
+  --fr-muted: #64748b;
+  --fr-bg-soft: #f8fafc;
+  --fr-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
 .franchise-hero-wrapper{
     padding-top: 50px;
 }
@@ -35,7 +44,7 @@
 }
 
 .franchise-subtitle {
-  color: var(--color-primary);
+  color: var(--fr-accent);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -52,7 +61,7 @@
 }
 
 .franchise-description {
-  color: var(--color-text-muted);
+  color: var(--fr-muted);
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -72,7 +81,7 @@
 .franchise-icon-box {
   width: 48px;
   height: 48px;
-  background: var(--color-feature-bg);
+  background: #d4c6ba;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -81,7 +90,7 @@
 }
 
 .franchise-icon { 
-  color: var(--color-primary); 
+  color: var(--fr-accent); 
   width: 24px; 
   height: 24px; 
 }
@@ -93,7 +102,7 @@
 
 .franchise-feature-desc { 
   font-size: 14px; 
-  color: var(--color-text-muted); 
+  color: var(--fr-muted); 
   margin-top: 4px; 
 }
 
@@ -101,14 +110,14 @@
   background: white;
   padding: 24px;
   border-radius: 16px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .franchise-phone-link {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-primary);
+  color: var(--fr-accent);
   text-decoration: none;
   font-weight: 600;
   margin-top: 15px;
@@ -119,7 +128,7 @@
   background: white;
   padding: 40px;
   border-radius: 24px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--fr-shadow);
       align-self: center;
 }
 
@@ -152,7 +161,7 @@
 .franchise-label {
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-text-primary);
+  color: var(--fr-foreground);
   display: flex;
   align-items: center;
 }
@@ -167,9 +176,9 @@
 .franchise-select-field, 
 .franchise-textarea {
   padding: 12px;
-  border: 1px solid var(--color-border-form);
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
-  background: var(--color-bg-soft);
+  background: #f8fafc;
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
@@ -181,7 +190,7 @@
 }
 
 .franchise-submit-btn {
-  background: var(--color-primary);
+  background: var(--fr-accent);
   color: white;
   padding: 16px;
   border: none;
@@ -199,7 +208,7 @@
 .franchise-form-footer-note {
   font-size: 12px;
   text-align: center;
-  color: var(--color-text-muted);
+  color: var(--fr-muted);
 }
 
 .franchise-success-state { 
@@ -209,7 +218,7 @@
 .franchise-success-icon-box {
   width: 64px;
   height: 64px;
-  background: var(--color-success-bg);
+  background: #dcfce7;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -218,7 +227,7 @@
 }
 
 .franchise-success-icon { 
-  color: var(--color-success); 
+  color: #16a34a; 
   width: 32px; 
   height: 32px; 
 }

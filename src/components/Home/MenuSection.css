@@ -10,7 +10,7 @@
     align-items: center;
 }
 .menu-header span{
-    color: var(--color-primary);
+    color: #cb8e32;
     text-transform: uppercase;
 }
 .menu-header h1{
@@ -22,7 +22,7 @@
 
 .menu-header p{
 
-    color: var(--color-text-muted);
+    color: #64748b;
     width: 50%;
     text-align: center;
 }

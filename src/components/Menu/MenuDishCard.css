@@ -1,9 +1,9 @@
 .menu-dish-card {
   position: relative;
-  background: var(--color-white);
+  background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid var(--color-bg-light);
+  border: 1px solid #f0f0f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -21,8 +21,8 @@
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: var(--color-primary-muted);
-  color: var(--color-white);
+  background-color: #c19a6b; /* Matching your theme bronze */
+  color: #fff;
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -36,7 +36,7 @@
   width: 100%;
   aspect-ratio: 4 / 3; /* Keeps all food images uniform */
   overflow: hidden;
-  background-color: var(--color-bg-soft);
+  background-color: #f8f8f8;
 }
 
 .card-image-container img {
@@ -69,21 +69,21 @@
 .product-name {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: #1a1a1a;
   margin: 0;
 }
 
 .product-price {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-primary-muted);
+  color: #c19a6b;
   white-space: nowrap;
 }
 
 .product-description {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: var(--color-text-tertiary);
+  color: #666;
   margin-bottom: 20px;
   /* Limit description to 2 lines for uniformity */
   display: -webkit-box;
@@ -100,8 +100,8 @@
 .add-to-cart-btn {
   width: 100%;
   padding: 12px;
-  background-color: var(--color-dark);
-  color: var(--color-white);
+  background-color: #1a1a1a;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -111,7 +111,7 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: var(--color-dark-gray);
+  background-color: #333333;
 }
 
 .add-to-cart-btn:active {

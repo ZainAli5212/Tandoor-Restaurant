@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 60px 20px;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  color: var(--color-dark-gray);
+  color: #333;
 }
 
 /* Values Grid Layout */
@@ -18,9 +18,9 @@
 /* Value Card Styling */
 .value-card {
   padding: 40px;
-  background: var(--color-white);
+  background: #ffffff;
   border-radius: 12px;
-  border: 1px solid var(--color-border-subtle);
+  border: 1px solid #eee;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
@@ -33,29 +33,29 @@
 .icon-box {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--color-primary-warm); /* Sophisticated gold/bronze accent */
+  color: #d4a373; /* Sophisticated gold/bronze accent */
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: var(--color-dark);
+  color: #1a1a1a;
 }
 
 .card-description {
   line-height: 1.6;
-  color: var(--color-text-tertiary);
+  color: #666;
   font-size: 1rem;
 }
 
 /* CTA Banner Styling */
 .cta-banner {
-  background-color: var(--color-dark);
+  background-color: #1a1a1a; /* Dark sleek background */
   border-radius: 20px;
   padding: 60px 40px;
   text-align: center;
-  color: var(--color-white);
+  color: #ffffff;
 }
 
 .cta-content {
@@ -64,7 +64,7 @@
 }
 
 .cta-title {
-    color: var(--color-primary);
+    color:  #cb8e32;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 20px;
@@ -79,8 +79,8 @@
 }
 
 .cta-button {
-  background-color: var(--color-white);
-  color: var(--color-dark);
+  background-color: #ffffff;
+  color: #1a1a1a;
   padding: 16px 32px;
   border: none;
   border-radius: 50px;
@@ -91,7 +91,7 @@
 }
 
 .cta-button:hover {
-  background-color: var(--color-bg-light);
+  background-color: #f0f0f0;
   transform: scale(1.05);
 }
 

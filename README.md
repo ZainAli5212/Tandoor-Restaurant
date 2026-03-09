@@ -1,113 +1,16 @@
-# 🍽️ Tandoor Restaurant
+# React + Vite
 
-A modern, responsive restaurant website for **Tandoor Restaurant** — showcasing authentic Indian and tandoori cuisine with online ordering, catering services, franchising opportunities, and multi-location support. Built with React and Vite.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
+Currently, two official plugins are available:
 
-- **Dynamic Menu** — Browse dishes across categories (BBQ, Chinese, Desi, Desserts, Beverages) with filtering
-- **Online Ordering** — Place orders directly through the website
-- **Catering Services** — Dedicated page for tandoori catering information
-- **Franchising** — Explore franchise opportunities
-- **Multiple Locations** — View and find restaurant branches
-- **Photo Gallery** — Browse restaurant and food images
-- **Reservations** — Table reservation section on the home page
-- **Testimonials** — Customer reviews and feedback
-- **Smooth Animations** — Polished UI transitions powered by Framer Motion
-- **Cloud-Hosted Images** — Fast image delivery via Cloudinary CDN
-- **Responsive Design** — Optimized for all screen sizes
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠️ Tech Stack
+## React Compiler
 
-| Technology | Purpose |
-|---|---|
-| [React](https://react.dev/) | UI framework |
-| [Vite](https://vite.dev/) | Build tool with HMR |
-| [React Router](https://reactrouter.com/) | Client-side routing |
-| [Framer Motion](https://www.framer.com/motion/) | Animations and transitions |
-| [Cloudinary](https://cloudinary.com/) | Image hosting and CDN |
-| [Lucide React](https://lucide.dev/) | Icon library |
-| [ESLint](https://eslint.org/) | Code linting |
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🚀 Getting Started
+## Expanding the ESLint configuration
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- npm
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/ZainAli5212/Tandoor-Restaurant.git
-
-# Navigate to the project directory
-cd Tandoor-Restaurant
-
-# Install dependencies
-npm install
-```
-
-### Development
-
-```bash
-# Start the development server
-npm run dev
-```
-
-The app will be available at `http://localhost:5173` by default.
-
-### Build
-
-```bash
-# Create a production build
-npm run build
-
-# Preview the production build locally
-npm run preview
-```
-
-### Linting
-
-```bash
-npm run lint
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── assets/              # Static assets (menu images)
-├── components/          # Reusable React components
-│   ├── About/           # About page components
-│   ├── Common/          # Shared components (Navbar, Footer, ItemCard, etc.)
-│   ├── Franchising/     # Franchising page components
-│   ├── Gallery/         # Photo gallery components
-│   ├── Home/            # Home page components (Hero, MenuSection, Testimonials)
-│   ├── Location/        # Location page components
-│   ├── Menu/            # Menu display components
-│   └── TandooriCatering/# Catering page components
-├── data/                # Static data (menu items, gallery, locations)
-├── pages/               # Top-level route pages
-├── App.jsx              # Root component with routing
-├── App.css              # App-level styles
-├── main.jsx             # React entry point
-└── index.css            # Global styles
-```
-
-## 🗺️ Pages
-
-| Route | Page | Description |
-|---|---|---|
-| `/` | Home | Landing page with hero, menu highlights, testimonials, and reservations |
-| `/about` | About | Restaurant story, stats, and information |
-| `/menu` | Menu | Full menu with category filtering |
-| `/order-now` | Order Now | Online ordering interface |
-| `/tandoori-catering` | Catering | Tandoori catering services |
-| `/locations` | Locations | Restaurant branch locations |
-| `/franchising` | Franchising | Franchise opportunity details |
-| `/gallery` | Gallery | Photo gallery of food and restaurant |
-
-## 🌐 Deployment
-
-This project is configured for deployment on [Vercel](https://vercel.com/). A `vercel.json` configuration file is included for seamless deployment with client-side routing support.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
