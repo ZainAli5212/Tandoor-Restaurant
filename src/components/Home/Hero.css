@@ -34,7 +34,7 @@
     font-size: 18px;
 }
 .welcome{
-    color: #cb8e32;
+    color: var(--color-primary);
 }
 
 .ReserveBtn{

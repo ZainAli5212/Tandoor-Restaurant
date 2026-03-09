@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   /* color: rgba(0, 0, 0, 0.733); */
-  background-color: #1f2937;
+  background-color: var(--color-dark-blue);
 }
 
 .location-container {
@@ -17,8 +17,7 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 48px;
-  color: #ffffff;
-  /* Adjusted to white for better visibility on dark BG */
+  color: var(--color-white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -36,7 +35,7 @@
 .category-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: capitalize;
   white-space: nowrap;
 }
@@ -77,11 +76,11 @@
 
 /* Card Styling */
 .location-card {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border-light);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -103,19 +102,19 @@
 .card-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--color-dark-blue);
   margin-bottom: 8px;
 }
 
 .card-text {
   font-size: 0.875rem;
-  color: #4b5563;
+  color: var(--color-text-gray);
   margin-bottom: 4px;
 }
 
 .card-phone {
   font-size: 0.875rem;
-  color: #2563eb;
+  color: var(--color-info);
   font-weight: 500;
   margin-top: 12px;
   display: flex;
@@ -130,9 +129,9 @@
   display: inline-block;
   margin-top: 12px;
   text-decoration: none;
-  background-color: #D1A054;
+  background-color: var(--color-primary);
   padding: 8px 16px;
-  color: black;
+  color: var(--color-text-primary);
   border-radius: 5px;
 }
 
