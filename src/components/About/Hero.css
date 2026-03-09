@@ -49,7 +49,7 @@
 }
 
 .subtitle {
-  color: #cb8e32; /* orange-600 */
+  color: var(--accent);
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
   margin-top: 16px;
   margin-bottom: 24px;
   line-height: 1.2;
-    color: #e5e7eb;
+    color: var(--text-light);
 }
 
 @media (min-width: 768px) {
@@ -73,12 +73,12 @@
 
 .italic-text {
   font-style: italic;
-  color: #cb8e32;
+  color: var(--accent);
 }
 
 .description {
   font-size: 1.125rem;
-  color: #e5e7eb;
+  color: var(--text-light);
   line-height: 1.625;
   margin-bottom: 24px;
 }
@@ -87,14 +87,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #d1d5db;
+  color: var(--text-light);
   font-style: italic;
 }
 
 /* Image Styles */
 .image-card {
   aspect-ratio: 16 / 9;
-  background-color: #f3f4f6;
+  background-color: var(--bg-soft);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);

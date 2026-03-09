@@ -1,3 +1,22 @@
+:root {
+  --accent: #cb8e32;
+  --accent-hover: #a67f56;
+  --foreground: #0f172a;
+  --dark: #1a1a1a;
+  --dark-bg: #1f2937;
+  --muted: #64748b;
+  --text-light: #e5e7eb;
+  --bg-soft: #f8fafc;
+  --border: #e2e8f0;
+  --border-light: #f0f0f0;
+  --icon-bg: #d4c6ba;
+  --success: #16a34a;
+  --success-bg: #dcfce7;
+  --star: #f97316;
+  --link-blue: #2563eb;
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +25,5 @@
 }
 
 body{
-     /* background-color: #f2f2f2; */
-       background-color: #1f2937;
+       background-color: var(--dark-bg);
 }

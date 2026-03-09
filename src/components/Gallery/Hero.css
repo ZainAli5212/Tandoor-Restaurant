@@ -17,7 +17,7 @@
 .gallery-hero-headline {
   font-size: 3.5rem;
   font-weight: 700;
-  color:hsl(37, 62%, 50%);
+  color: var(--accent);
   margin: 0 0 1.25rem;
   line-height: 1.15;
 }
@@ -48,7 +48,7 @@
 }
 
 .gallery-hero-btn-primary {
-  background-color: hsl(37, 62%, 50%);
+  background-color: var(--accent);
   color: #000000;
   border: none;
 }

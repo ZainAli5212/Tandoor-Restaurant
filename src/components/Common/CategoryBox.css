@@ -13,7 +13,7 @@
 }
 .category-title {
   margin-bottom: 20px;
-  color: #000000; /* Assuming a dark theme like Netflix */
+  color: var(--foreground);
   font-size: 1.5rem;
 }
 
@@ -74,7 +74,7 @@
 .dot {
     width: 12px;
     height: 12px;
-    background: #ccc;
+    background: var(--border);
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -83,7 +83,7 @@
 /* Matching your image: the active dot becomes a dash */
 .dot.active {
     width: 30px;
-    background: #D1A054;
+    background: var(--accent);
     border-radius: 6px;
 }
 

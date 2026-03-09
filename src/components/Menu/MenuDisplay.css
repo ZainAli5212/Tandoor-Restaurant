@@ -24,9 +24,9 @@
 
 .category-btn {
   padding: 10px 24px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border);
   background: #ffffff;
-  color: #555;
+  color: var(--muted);
   border-radius: 50px;
   font-weight: 500;
   white-space: nowrap; /* Prevents text wrapping */
@@ -35,13 +35,13 @@
 }
 
 .category-btn:hover {
-  border-color: #c19a6b;
-  color: #c19a6b;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .category-btn.active {
-  background-color: #1a1a1a;
-  border-color: #1a1a1a;
+  background-color: var(--dark);
+  border-color: var(--dark);
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -49,13 +49,13 @@
 /* Results Text */
 .results-text {
   font-size: 0.95rem;
-  color: #777;
+  color: var(--muted);
   margin-bottom: 25px;
   text-transform: capitalize;
 }
 
 .results-text strong {
-  color: #1a1a1a;
+  color: var(--dark);
 }
 
 /* The Menu Grid */
@@ -70,13 +70,13 @@
 .no-items {
   text-align: center;
   padding: 80px 20px;
-  background: #f9f9f9;
+  background: var(--bg-soft);
   border-radius: 16px;
-  border: 2px dashed #e0e0e0;
+  border: 2px dashed var(--border);
 }
 
 .no-items p {
-  color: #888;
+  color: var(--muted);
   font-size: 1.1rem;
 }
 

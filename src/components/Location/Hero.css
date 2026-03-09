@@ -17,7 +17,7 @@
 /* Badge Styling */
 .badge {
   display: inline-block;
-  background-color: #cb8e32; /* Heritage Bronze/Gold */
+  background-color: var(--accent);
   color: #ffffff;
   padding: 6px 16px;
   border-radius: 50px;
@@ -78,7 +78,7 @@
 
 .city-quick-links button:hover {
   background: #ffffff;
-  color: #1a1a1a;
+  color: var(--dark);
   transform: translateY(-3px);
   border-color: #ffffff;
 }
